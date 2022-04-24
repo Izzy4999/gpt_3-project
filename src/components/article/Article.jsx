@@ -1,10 +1,12 @@
 import React from "react";
 import "./article.css";
 
-const Article = () => {
+const Article = ({ imgUrl, imgAlt }) => {
   return (
-    <div>
-      <h1>Article</h1>
+    <div className="gpt3__blog-container_article">
+      <div className="gpt3__blog-container_article-image">
+        <img src={imgUrl} alt={imgAlt} />
+      </div>
     </div>
   );
 };
